@@ -1,103 +1,89 @@
-*{
-	margin:0;
-	padding:0;
-	color:#aaa;
-	font-family:'Lato', sans-serif;
-	}
-	
-.menu{
-	width:100%;
-	height:50px;
-	background-color: #222;
-	}
-	
-.menu>ul{
-	list-style:none;	
-	position:relative;
-	margin-left:50px;
-	}
-.menu ul li{
-		width:150px;
-		float:left;
-	}
-
-.menu a{
-	padding:15px;
-	display:block;
-	text-decoration: none;
-	background-color: #222;
-	text-align:center;
-	}
-.menu ul ul{
-	list-style:none;
-	position:absolute;
-	visibility:hidden;
-	
-	}
-.menu ul li:hover ul{
-	visibility:visible;
-	}
-	
-.menu a:hover{
-	background-color:#f4f4f4;
-	}
-
-.menu ul ul li{
-	float:none;
-	border-bottom: solid 1px #ccc;
-	}
-.menu ul ul li a{
-	background-color:#069;
-	}
-#bt_menu{
-	display: none;
-	}
-label[for='bt_menu']{
-	padding:5px;
-	background-color:#222;
-	color:#fff;
-	font-family:'Arial';
-	text-align:center;
-	font-size:30px;
-	cursor:pointer;
-	display:none;
-	width:50px;
-	height:50px;
-	}	
-label[for='bt_menu']:hover{
-	background-color:#f4f4f4;
-	color:#aaa;
-	}
-@media (max-width: 800px) {
-.menu{
-	margin-left:-100%;
-	transition:all .4s;
-	}
-label[for='bt_menu']{
-	display:block;
-	}
-.menu>ul{
-	margin-left:0;
-	}
-.menu{
-	margin-top:5px;
-	}
-.menu ul li{
-	width:100%;
-	float:none;
-	}
-.menu ul ul{
-	position:static;
-	overflow:hidden;
-	max-height:0;
-	transition:all .4s;
-	}
-.menu ul li:hover ul{
-	height:auto;
-	max-height:200px;
-	transition:all .4s;
-	}
-#bt_menu:checked ~ .menu{
-	margin-left:0;
-	}
+body {
+  font-family: 'Lato', sans-serif ;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    align-content: center;
+
+  }
+
+
+  nav a {
+    display:inline-flex;
+    background-color:#000000;
+    padding: 20px;
+    text-align:  center;
+    display: block;
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #5A2D81;
+  color: white;
+}
+
+header img
+{
+  width:100px;
+  height: auto;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+/* NAV */
+nav {
+  background-color:#000000;
+  padding: 20px;
+}
+nav a 
+{
+  padding:15px;
+  display:block;
+  text-decoration: none;
+  color: #DB3EB1;;
+  background-color: #222;
+  text-align:center;
+}
+
+/* NAV */ 
+aside {
+  color: white;
+  padding: 20px;
+  background-color:#000000;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.0em;
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bolder;
+  font-family:'Press Start 2P', cursive; 
+}
+
