@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> dpwT2</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+    </head>
+     <body class="container">
+         <header><a href="index.html"><img alt='miami heat logo' id="heat" src="img/heat.png"> </a></header>
+
+            <nav>
+                    <a href="index.html">Home</a>
+                    <a href="cultura.html">Cultura</a>
+                    <a href="equipamentos.html">Equipamentos</a> 
+                    <a href="pesquisa.html">Pesquisa</a>
+                    <a href="enquete.html">Enquete</a>    
+            </nav>
+            <main>
+                 <h1><a id="enquete">Enquete</a></h1>
+                    <section>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" required><br>
+                        <label > Quando você nasceu?</label><br>
+                        <input type="date" name="datanasc" required><br>
+                        <label>Quantos anos você tem?</label><br>
+                        <input type="number" name="idade" min="1" max="100"><br>
+                         <label > Qual seu email?</label><br>
+                         <input type="email" name="email" required><br>
+                         <label>Qual o link do seu facebook? </label><br>
+                         <input type="url" name="facebook"><br>
+                    </section>
+                        
+
+
+
+
+                        <label>Você curte basquete?</label><br>
+                        <input type="radio" name="op">Sim<br>
+                        <input type="radio" name="op">Não, não sei o que to fazendo aqui.<br>
+                        <label> O quão bom você se considera no basquete?</label><br>
+                        <input type="range" name="skill" min="0" max="10"><br>
+                        <label>Você acha que o Brasil tem a estrutura necessária para a prática do basquete? Nos dê sua opinião em poucas palavras abaixo:</label><br>
+                        <textarea name="opiniao" rows="10" cols="30"></textarea><br>
+                        <label >Qual seu time favorito da NBA? </label><br>
+                        <select>
+                            <option>Selecione</option>
+                            <option>New York Knicks</option>
+                            <option>Brooklyn Nets</option>
+                            <option> Philadelphia 76ers</option>
+                            <option>Cleveland Cavaliers </option>
+                            <option> Toronto Raptors</option>
+                            <option> Golden State Warriors</option>
+                            <option> Chicago Bulls</option>
+                            <option>Los Angeles Lakers</option>
+                            <option>Los Angeles Clippers</option>
+                            <option>Houston Rockets</option>
+                            <option>San Antonio Spurs</option>
+                        </select><br><br>
+                        <label >Marque aqui qual desses abaixo NÃO é um equipamento de basquete:</label><br>
+                            <input type="checkbox" >Bola de Basquete<br>
+                            <input type="checkbox" >Tabela e Aro<br>
+                            <input type="checkbox" >Chuteira<br>
+                            <input type="checkbox" >Sleeve<br>
+                
+                            <input id="btenviar" type="submit" value="Enviar">
+
+                    
+            </main>
+
+                <aside> 
+                Endereço: Av. Pasteur, 458 - Botafogo, Rio de Janeiro - RJ, 22290-250
+                </aside>
+             <footer>Designed by Matheus Inácio e Tadeu André</footer>         
+
+    </body>
+</html>

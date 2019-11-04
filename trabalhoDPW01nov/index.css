@@ -1,0 +1,156 @@
+body {
+  font-family: 'Lato', sans-serif ;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    align-content: center;
+
+  }
+
+
+  nav a {
+    display:inline-flex;
+    background-color:#000000;
+    padding: 20px;
+    text-align:  center;
+    display: block;
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #5A2D81;
+  color: white;
+}
+
+header img
+{
+  width:100px;
+  height: auto;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+/* nav*/
+nav {
+  background-color:#000000;
+  padding: 20px;
+}
+nav a 
+{
+  padding:15px;
+  display:block;
+  text-decoration: none;
+  color: #DB3EB1;;
+  background-color: #222;
+  text-align:center;
+}
+
+/* NAV */ 
+aside {
+  color: white;
+  padding: 20px;
+  background-color:#000000;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.0em;
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-family:'Lato', sans-serif; 
+}
+
+#h1index:hover
+{
+
+}
+
+/* pseudo-classes */
+a.linkwiki:hover{
+  color: black;
+}
+a.linkwiki:visited{
+  color: pink;
+}
+a.linkwiki:active{
+  color: blue;
+}
+
+/*    */
+
+/* pseudo-elementos */
+
+p::first-letter
+{
+  color: red;
+}
+
+p::first-line
+{
+  color: purple;
+  font-variant: small-caps;
+}
+p::after
+{
+  content:  "→";
+}
+
+/* Parágrafo do requisito */
+#indexP
+{
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: dotted;
+  border-radius: 2px;
+  border-color: purple;
+
+}
+/*  */
+
+/* MicroInterações h1 */
+#equipamentos:hover{
+  font-size: 50px;
+}
+#index:hover{
+  font-size: 10px;
+  color: blue;
+}
+#cultura:active{
+  color: green;
+}
+#pesquisa:hover{
+  font-family: 'Press Start 2P', cursive;
+}
+#enquete:hover{
+  cursor: pointer;
+}
+/* ---------------- */
